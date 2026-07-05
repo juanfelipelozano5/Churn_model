@@ -18,7 +18,7 @@ Prueba técnica para el rol de Analista Jr. de Ciencia de Datos en una compañí
 | 1. Entendimiento del problema | Formulación del objetivo analítico y pregunta de negocio |
 | 2. Lectura, limpieza y preparación | Inspección de nulos, duplicados, outliers (IQR), tipos de datos y codificación (One-Hot Encoding) |
 | 3. Datos semiestructurados (JSON) | Archivo `business_context.json` con reglas de negocio: segmentos de edad, costos de adquisición/retención, niveles de vinculación y segmento de vida financiera |
-| 4. Feature Engineering | Creación de variables: `BalanceSalaryRatio`, `TenureAgeRatio`, `HasBalance`, `NivelVinculacion`, `VidaFinanciera` (con percentiles por género desde JSON) |
+| 4. Feature Engineering | Creación de variables: 'balance_per_product', 'balance_salary_ratio', 'inactive_with_balance', 'is_senior', 'young_low_products', 'short_tenure', 'segmento_vida_enc' (con percentiles por género desde JSON) |
 | 5. EDA | Análisis de churn por geografía, edad, productos, actividad y correlaciones, orientado a preguntas de negocio |
 | 6. Preparación para modelado | Split estratificado 70/15/15 (train/val/test), escalado con StandardScaler sin data leakage |
 | 7. Modelado | Regresión Logística (interpretable) y Random Forest (mayor desempeño), ambos con `class_weight='balanced'` |
