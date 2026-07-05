@@ -53,7 +53,7 @@ Prueba técnica para el rol de Analista Jr. de Ciencia de Datos en una compañí
 ```
 ├── README.md                  # Este archivo
 ├── requirements.txt           # Dependencias del proyecto
-├── curn_model.ipynb           # Notebook principal (Google Colab)
+├── churn_model.ipynb           # Notebook principal (Google Colab)
 ├── business_context.json      # Reglas de negocio en formato JSON
 ├── Churn_Modelling.csv        # Dataset (descargar de Kaggle)
 ├── api/                       # Bonus: microservicio
@@ -66,7 +66,7 @@ Prueba técnica para el rol de Analista Jr. de Ciencia de Datos en una compañí
 ## Cómo ejecutar
 
 ### Notebook (Google Colab)
-1. Abrir `curn_model.ipynb` en Google Colab
+1. Abrir `churn_model.ipynb` en Google Colab
 2. Subir el archivo `Churn_Modelling.csv` a `/content/`
 3. Ejecutar todas las celdas en orden secuencial (de arriba hacia abajo)
 
