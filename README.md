@@ -113,6 +113,4 @@ La estructura del notebook, el debugging y la documentación fueron asistidos po
 - No registrar datos de clientes en logs de la API; loguear solo metadata (timestamp, status code, latencia).
 - Cumplir con políticas de retención y eliminación de datos según la normativa vigente (Habeas Data en Colombia).
 
-## Autor
 
-Prueba técnica — Analista Jr. de Ciencia de Datos
