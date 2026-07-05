@@ -1,0 +1,40 @@
+{
+  "empresa": "Compañía Financiera",
+  "productos": ["Ahorro", "Inversión", "Pensiones", "Seguros"],
+  "segmentos_edad": {
+    "joven": {"min": 18, "max": 30},
+    "adulto": {"min": 31, "max": 50},
+    "senior": {"min": 51, "max": 100}
+  },
+  "costo_adquisicion_cliente_usd": 500,
+  "costo_retencion_promedio_usd": 80,
+  "reglas_vinculacion": {
+    "alta": {"min_productos": 3, "activo": true},
+    "media": {"min_productos": 2, "activo": true},
+    "baja": {"min_productos": 1, "activo": false}
+  },
+  "segmento_vida_financiera": {
+    "inexperto": {
+      "descripcion": "Cliente en etapa temprana de vida financiera, salario bajo relativo a su grupo demográfico",
+      "reglas": {
+        "edad_max": 30,
+        "salario_percentil_max": 40
+      }
+    },
+    "promedio": {
+      "descripcion": "Cliente con trayectoria financiera en desarrollo, salario medio",
+      "reglas": {
+        "edad_min": 18,
+        "edad_max": 55,
+        "salario_percentil_min": 40,
+        "salario_percentil_max": 75
+      }
+    },
+    "experto": {
+      "descripcion": "Cliente maduro financieramente, salario alto o edad avanzada con capital acumulado",
+      "reglas": {
+        "condicion": "edad > 55 OR salario en percentil > 75"
+      }
+    }
+  }
+}
